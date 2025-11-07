@@ -25,6 +25,7 @@ public:
 	bool IsNull();
 	explicit operator bool();
 	WorldInfoWrapper GetWorldInfo();
+	bool IsVisible();
 	//END SELF IMPLEMENTED
 
 	//AUTO-GENERATED FROM FIELDS
