@@ -12,6 +12,12 @@ Currently the SDK is being extended to make it easier for plugin developers to c
 ## Getting started
 In order to create plugins for Rocket League with BakkesMod you need the SDK. By default the SDK will be included with the BakkesMod installation and can be found in %appdata%\bakkesmod\bakkesmod\bakkesmodsdk\. You could also simply clone this repository as this also contains the full SDK and is often more up to date.
 
+### New Visualization Features
+Check out [VISUALIZATION_FEATURES.md](VISUALIZATION_FEATURES.md) to learn about the new visualization capabilities including:
+- `IsVisible()` - Check if actors are visible in the game world
+- `IsOnScreen()` - Determine if positions are within the viewport
+- Circle drawing methods - Enhanced shape drawing for visualizations
+
 ### IDE
 To get started quickly, check out the [template](https://github.com/Martinii89/BakkesmodPluginTemplate) to automatically generate a project skeleton. In order to load your plugin ingame make sure the generated .dll is placed in the plugins folder of BakkesMod. Next, in Rocket League open the console and type ```plugin load filename``` (without the .dll extension!). To unload your plugin you can use ```plugin unload filename```. Any cvars/notifiers/drawables that are registered when a plugin is loaded are automatically removed when a plugin is unloaded, so you don't have to worry about that!
 
