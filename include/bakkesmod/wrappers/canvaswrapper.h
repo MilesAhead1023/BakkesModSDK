@@ -40,10 +40,16 @@ public:
 	void DrawLine(Vector2 start, Vector2 end);
 	void DrawLine(Vector2 start, Vector2 end, float width);
 	void DrawRect(Vector2 start, Vector2 end);
+	void DrawCircle(Vector2 center, float radius);
+	void DrawCircle(Vector2 center, float radius, int segments);
+	void FillCircle(Vector2 center, float radius);
+	void FillCircle(Vector2 center, float radius, int segments);
 
 	Vector2 Project(Vector location);
 	Vector2F ProjectF(Vector location);
 	Vector2 GetSize();
+	bool IsOnScreen(Vector location);
+	bool IsOnScreen(Vector2 screenPos);
 private:
 	PIMPL
 };
