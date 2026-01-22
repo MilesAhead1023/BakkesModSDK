@@ -11,6 +11,8 @@ public:
 	_NODISCARD bool IsNull() const;
 	explicit operator bool() const;
 
+	void SetOwnerNoSee(bool newOwnerNoSee);
+
 	//AUTO-GENERATED FROM FIELDS
 	unsigned char GetRBChannel();
 	void SetRBChannel(unsigned char newRBChannel);

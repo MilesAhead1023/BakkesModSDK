@@ -34,6 +34,8 @@ public:
 	unsigned long HasFlip();
 	int GetLoadoutBody();	//END SELF IMPLEMENTED
 
+	PrimitiveComponentWrapper GetNameplateMeshComponent();
+
 	//AUTO-GENERATED FROM FIELDS
 	//Only works in freeplay
 	void SetCarColor(LinearColor mainColor, LinearColor secondaryColor);
